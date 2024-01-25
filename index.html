@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Following Cursor</title>
+    <style>
+      body {
+        background-image: url(painting-mountain-lake-with-mountain-background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+      }
+      .circle {
+        background: transparent;
+        backdrop-filter: blur(18px);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+  </body>
+  <script src="script.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</html>
